@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile - InternMatcher</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <!-- Floating Particles -->
+  <canvas id="particles"></canvas>
+
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="logo">NavInterN</div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="intern.html">All Internships</a></li>
+      <li id="navProfileLi"><a href="#">Profile</a></li>
+      <li id="navLogoutLi"><button id="logoutBtn">Logout</button></li>
+    </ul>
+  </nav>
+
+  <!-- Profile Section -->
+  <section class="profile-section">
+    <div class="profile-container">
+      <h2 id="profileName">User Name</h2>
+      <p><strong>Email:</strong> <span id="profileEmail"></span></p>
+
+      <label>Bio:</label>
+      <textarea id="userBio" rows="4" placeholder="Write something about yourself..."></textarea>
+
+      <label>Top Skills (comma separated):</label>
+      <input type="text" id="userSkills" placeholder="e.g., HTML, CSS, JS">
+
+      <label>Internship Progress (%):</label>
+      <input type="number" id="userProgress" min="0" max="100">
+
+      <button id="saveProfile">Save Profile</button>
+
+      <div class="profile-preview">
+        <h3>Preview</h3>
+        <p><strong>Bio:</strong> <span id="displayBio"></span></p>
+        <p><strong>Skills:</strong> <span id="displaySkills"></span></p>
+        <p><strong>Progress:</strong> <span id="displayProgress"></span>%</p>
+      </div>
+    </div>
+  </section>
+
+  <script src="auth.js"></script>
+  <script src="profile.js"></script>
+</body>
+</html>

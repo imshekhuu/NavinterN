@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PM INTERNSHIP SCHEMES</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+ 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+</head>
+<body>
+  <!-- Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="./lv_0_20250921113848.mp4" type="video/mp4">
+  </video>
+
+  <!-- Floating Particles -->
+  <canvas id="particles"></canvas>
+
+
+  <nav class="navbar">
+    <div id="overlay"></div>
+    <div class="logo">
+      <img src="./WhatsApp_Image_2025-09-12_at_08.57.21_58082b34-removebg-preview.png" alt="Logo"> NavInterN
+    </div>
+
+    <div class="hamburger" id="hamburger">☰</div>
+
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="intern.html">All Internships</a></li>
+      <li><a href="#projects">Jobs</a></li>
+      <li><a href="#engineers">Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+      <!-- <li><a href="./profile.html">Profile</a></li> -->
+     <!-- Login Button -->
+    <li id="navLoginLi">
+      <button class="login-btn" id="navLoginBtn">Login</button>
+    </li>
+
+    <!-- Profile + Logout (hidden by default) -->
+    <li id="navProfileLi" style="display:none;">
+      
+        <button class="login-btn" id="navProfileBtn"><a href="./profile.html">profile</a></button>
+      
+    </li>
+    <li id="navLogoutLi" style="display:none;">
+      <button class="login-btn" id="navLogoutBtn">Logout</button>
+    </li>
+    </ul>
+
+    <button id="theme-toggle" class="theme-btn">🌙</button>
+</nav>
+
+
+  <!-- Hero -->
+  <section id="home" class="content">
+    <h1>Welcome To NavInterN</h1>
+    <p>“Bridging Talent with Opportunity – Explore Government Internships, Learn, and Contribute to Nation-Building.”</p>
+   
+
+    
+  </section>
+
+  <section id="projects" class="projects">
+    <h2 class="section-title">What we provide you!!</h2>
+    <div class="project-grid">
+      <a class="link" href=""><div class="project-card"><h3>Software Development Intern</h3><p class="link-p">Learn coding, debugging, and teamwork on live projects.</p></div></a>
+      <a class="link" href=""><div class="project-card"><h3>Digital Marketing Intern</h3><p class="link-p">Manage SEO, social media, and online brand presence.</p></div></a>
+      <a href="" class="link"><div class="project-card"><h3>Content Writing Intern</h3><p class="link-p">Create blogs, articles, and creative content for websites.</p></div></a>
+      <a href="" class="link"><div class="project-card"><h3>Data Analyst Intern</h3><p class="link-p">Analyze datasets, create reports, and find business insights.</p></div></a>
+      <a href="" class="link"><div class="project-card"><h3>Graphic Design Intern</h3><p class="link-p">Design posters, banners, and creatives using design tools.</p></div></a>
+      <a href="" class="link"><div class="project-card"><h3>HR Intern</h3><p class="link-p">Handle recruitment, employee onboarding, and basic HR tasks.</p></div></a>
+      <a href="" class="link"><div class="project-card"><h3>Finance Intern</h3><p class="link-p">Work on budgeting, expense tracking, and financial report preparation.</p></div></a>
+      <a href="" class="link"><div class="project-card"><h3>Sales Intern</h3><p class="link-p">Support lead generation, client communication, and product promotion.</p></div></a>
+      <a href="" class="link"><div class="project-card"><h3>Customer Support Intern</h3><p class="link-p">Assist clients, resolve queries, and ensure customer satisfaction.</p></div></a>
+      <a href="" class="link"><div class="project-card"><h3>Event Management Intern</h3><p class="link-p">Coordinate events, scheduling, promotions, and vendor management.</p></div></a>
+    </div>
+  </section>
+
+  <!-- Engineers -->
+  <section id="engineers" class="engineers">
+    <h2 class="section-title">Government Policys</h2>
+    <div class="project-grid">
+      <div class="project-card"><h3>1. Privacy Policy</h3><p>No unnecessary personal details: We do not ask for sensitive info like caste, religion, or family income unless absolutely required for eligibility.<br>Data security: All your data is encrypted and stored securely. <br> User control: You can request data deletion anytime.</p></div>
+      <div class="project-card"><h3>2. Anti-Discrimination & Equal Opportunity</h3><p>AI-driven fair matching: Our AI engine avoids bias based on caste, gender, economic background, or region. <br> Inclusive for all: Urban, rural, tribal, or slum backgrounds—everyone has equal access.
+<br>Equal evaluation: Applications are assessed purely on skills and eligibility.</p></div>
+      <div class="project-card"><h3>Eligibility Policy</h3><p>Each internship clearly shows who can apply: <br>Course/degree (e.g., B.Tech, Diploma, MBA)
+<br> Year of study
+<br> Minimum skills required
+<br> Location preference (if onsite)
+<br> Transparent criteria: No hidden filters or arbitrary rejection.</p></div>
+      <div class="project-card"><h3>Other Suggested Policies</h3><p>Stipend & benefits disclosure: Paid/unpaid, travel allowance, certification. <br> Work ethics & conduct: Confidentiality, professionalism, timely submissions.
+<br> Grievance redressal: Mechanism to report unfair practices or discrimination.
+<br> AI transparency: How our AI matches you with internships explained in simple terms.</p></div>
+
+
+  <!-- Contact Us -->
+  </div>
+  <section id="contact" class="contact">
+    <h2 class="section-title">📩 Contact Us</h2>
+    <p class="contact-caption">
+      This Government Internship Portal connects students with verified internships 
+      under government organizations, providing real-world experience and skill development.
+    </p>
+
+    <div class="contact-container">
+      <!-- Contact Info -->
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+        <p><strong>📍 Address:</strong> 123 Innovation Street, Tech City, India</p>
+        <p><strong>📧 Email:</strong> support@govinternships.com</p>
+        <p><strong>📞 Phone:</strong> +91 98765 43210</p>
+        <p><strong>⏰ Hours:</strong> Mon - Fri, 9:00 AM - 6:00 PM</p>
+      </div>
+
+      <!-- Contact Form -->
+      <form class="contact-form">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required>
+
+        <label for="email">Your Email</label>
+        <input type="email" id="email" placeholder="Enter your email" required>
+
+        <label for="message">Your Message</label>
+        <textarea id="message" rows="5" placeholder="Write your message..." required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer
+  <footer class="footer">
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#home" class="active">Home</a></li>
+      <li><a href="quiz.html">All Profiles</a></li>
+      <li><a href="leaderboard.html">All Internships</a></li>
+      <li><a href="#projects">Jobs</a></li>
+      <li><a href="#engineers">Policy</a></li>
+      <li><a href="#contact">Contact Us</a></li>
+    </ul>
+  </footer> -->
+
+  <!-- Scripts -->
+  <script src="auth.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - NavInterN</title>
+  <link rel="stylesheet" href="login.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Login Overlay -->
+  <div id="loginOverlay" class="show">
+    <div class="login-box">
+      <div class="logo-section">
+        <img src="./WhatsApp_Image_2025-09-12_at_08.57.21_58082b34-removebg-preview.png" alt="NavInterN Logo">
+        <h2>Welcome to NavInterN</h2>
+        <p class="subtitle">Government Internship Portal</p>
+      </div>
+      
+      <!-- Error/Success Messages -->
+      <div id="messageBox" class="message-box" style="display: none;"></div>
+      
+      <!-- Login Form -->
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="userName">Full Name</label>
+          <input type="text" id="userName" placeholder="Enter your full name" required>
+          <span class="error-text" id="nameError"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="userEmail">Email Address</label>
+          <input type="email" id="userEmail" placeholder="Enter your email" required>
+          <span class="error-text" id="emailError"></span>
+        </div>
+        
+        <div class="form-group">
+          <label for="userPass">Password</label>
+          <input type="password" id="userPass" placeholder="Enter your password" required>
+          <span class="error-text" id="passwordError"></span>
+        </div>
+        
+        <div class="form-options">
+          <label class="remember-me">
+            <input type="checkbox" id="rememberMe">
+            <span class="checkmark"></span>
+            Remember me
+          </label>
+        </div>
+        
+        <button type="submit" id="loginBtn">
+          <span class="btn-text">Login</span>
+          <span class="btn-loader" style="display: none;">⏳</span>
+        </button>
+      </form>
+      
+      <div class="login-footer">
+        <p>New to NavInterN? <a href="#" id="registerLink">Create Account</a></p>
+        <p><a href="#" id="forgotPassword">Forgot Password?</a></p>
+      </div>
+    </div>
+  </div>
+
+  <script src="auth.js"></script>
+  <script src="login.js"></script>
+</body>
+</html>
